@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Deshboard</title>
+    <script src="https://kit.fontawesome.com/9160492c19.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="main-container">
+        <section class="leftside">
+            <div class="scehdule">
+                <div class="d-flex p-0">
+                    <div class=" leftpanel-main-container d-flex justify-content-center colume leftpanel-block-first">
+                        <div class="">
+                            <div class="logo">
+                                Logo
+                            </div>
+                            <div class="deshboard">
+                                <i class="fas fa-chart-pie"></i>
+                                <div class="first">
+                                    <h3>dashboard</h3>
+                                </div>
+                            </div>
+                            <div class="tatics-vault">
+                                <i class="fas fa-clipboard"></i>
+                                <div class="tatic">
+                                    <h3>Tatics Vault</h3>
+                                </div>
+                            </div>
+                            <div class="team">
+                                <i class="fas fa-users"></i>
+                                <div class="teamname">
+                                    <h3>Teams</h3>
+                                </div>
+                            </div>
+                            <div class="scehdule-generator">
+                                <i class="fas fa-clipboard-list"></i>
+                                <div class="sced">
+                                    <h3>Scehdule Generator</h3>
+                                </div>
+                            </div>
+                            <div class="Weekly-Tranning-Plan">
+                                <i class="fas fa-calendar-alt"></i>
+                                <div class="tranning">
+                                    <h3>Weekly Tranning Plan</h3>
+                                </div>
+                            </div>
+                            <div class="team-matrics">
+                                <i class="fas fa-chart-bar"></i>
+                                <div class="matrics">
+                                    <h3>Team Matrics</h3>
+                                </div>
+                            </div>
+                            <div class="customaization">
+                                <i class="fas fa-cog"></i>
+                                <div class="changes">
+                                    <h3>Customaization</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="colume leftpanel-bottom">
+                            <h3 style="margin-left: 5px; color: #EFEFEF;"> Select Your Team </h3>
+                            <button> Select Team <i class="fas fa-sort-up"></i> </button>
+                        </div>
+                    </div>
+
+                    <div class="col p-0">
+                        <div class="main-body-navbar-container">
+                            <div class="mainbody-navbar pt-3 pb-3">
+                                <div class="mr-auto">
+                                    <a class="nav-item active" href="">Teams</a>
+                                    <a class="nav-item" href="">U23</a>
+                                    <a class="nav-item" href="">U19</a>
+                                </div>
+                                <div class="profile-block-with-image">
+                                    <hr>
+                                    <i class="fas fa-user"></i>
+                                    <div class="profile-label-name">
+                                        Marcus
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-body-container">
+                            <div class="container">
+                                <div class="col-12 row mt-5 mb-5 ml-0 mr-0">
+                                    <div
+                                        class="col-12 col-lg-6 mt-2 mb-2 ml-auto mr-auto mt-lg-0 mb-lg-0  d-flex justify-content-center justify-content-md-start">
+                                        <span href="" class=" scehdule-add" id="scehdule-add">Add New Scehdule</span>
+                                    </div>
+                                    <div class="col-12 col-lg-6  d-flex justify-content-md-end">
+                                        <input type="text" class=" scehdule-search"
+                                            placeholder="Search Your Scehdule" />
+                                    </div>
+
+                                    <div class="new-schedule-alert">
+                                        <div class="alert-dialog-overlay col-10 col-md-6 col-lg-8 col-xl-6 p-0 ">
+                                            <div class="session-add-block">
+                                                <div class="session-title m-0 p-0 pt-3 pb-3">
+                                                    Create New Schedule
+                                                </div>
+                                                <div class="container">
+                                                    <div class=" session-add-body pt-2">
+                                                        <div class="label">
+                                                            <label class="p-0" for="">Schedule Name</label>
+                                                            <input class="col session-title" placeholder="Enter Name" type="text">
+                                                        </div>
+                                                        <div class="row mt-3">
+                                                            <div class="col-12 col-lg-4">
+                                                                <div class="start-date">
+                                                                    <label for="">
+                                                                        Start Date
+                                                                    </label>
+                                                                    <input type="date" placeholder="select start date"
+                                                                        class="date-input">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-12 col-lg-4">
+                                                                <div class="end-date">
+                                                                    <label for="">
+                                                                        End Date
+                                                                    </label>
+                                                                    <input type="date" placeholder="select end date"
+                                                                        class="date-input">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-12 col-lg-4">
+                                                                <div class="end-date">
+                                                                    <label for="">
+                                                                        Enter No. of Weeks
+                                                                    </label>
+                                                                    <input type="text" placeholder="Enter No. of Weeks"
+                                                                        class="date-input">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="row w-100 p-0 m-0">
+                                                            <div class="col-6 p-0">
+                                                                <p class="close-btn">Close</p>
+                                                            </div>
+                                                            <div class="col-6 p-0">
+                                                                <p class="create-btn">Create</p>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- list start -->
+                                <div class="scheduled-list">
+                                    <div class="list w-100">
+                                        <div class="list-container">
+                                            <div class="row col-12 m-0">
+                                                <div class=" col-6 d-flex p-4 justify-content-md-start">
+                                                    <div class="text-left">
+                                                        <div class="title">
+                                                            winter training scehdule
+                                                        </div>
+                                                        <div class="d-flex align-items-center list-timeline">
+                                                            <div class="week-or-month text-muted">
+                                                                4 Weeks
+                                                            </div>
+                                                            <hr>
+                                                            <div class="training-session-count text-muted">
+                                                                12 Sessions
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-6 d-flex p-4 justify-content-md-end ">
+                                                    <div class="list-toolbox-icon d-flex">
+                                                        <div class="edit">
+                                                            <i class="fas fa-pen"></i>
+                                                        </div>
+                                                        <div class="delete">
+                                                            <i class="fas fa-trash"></i>
+                                                        </div>
+                                                        <div class="collapse-arrow">
+                                                            <i class="fas fa-sort-up"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 row">
+                                                <div class=" col-3 d-flex p-4 justify-content-md-start">
+                                                    <div class="text-left">
+                                                        <div class="start-date text-muted">
+                                                            START DATE
+                                                        </div>
+                                                        <div class="title">
+                                                            25 January 2020
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class=" col-3 d-flex p-4 justify-content-md-start">
+                                                    <div class="text-left">
+                                                        <div class="end-date text-muted">
+                                                            END DATE
+                                                        </div>
+                                                        <div class="title">
+                                                            19 February 2020
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 d-flex p-4 justify-content-md-end align-items-baseline">
+                                                    <a href="" class="list-update-btn">Update</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 row m-0 radio-button">
+                                                <div class="session-day-selector mt-2 mb-2 col active">
+                                                    <div class="week-day-block">
+                                                        <div class="radio"></div> Sunday
+                                                    </div>
+                                                </div>
+                                                <div class="session-day-selector mt-2 mb-2 col">
+                                                    <div class="week-day-block">
+                                                        <div class="radio"></div> Monday
+                                                    </div>
+                                                </div>
+                                                <div class="session-day-selector mt-2 mb-2 col">
+                                                    <div class="week-day-block">
+                                                        <div class="radio"></div> Tuesday
+                                                    </div>
+                                                </div>
+                                                <div class="session-day-selector mt-2 mb-2 col">
+                                                    <div class="week-day-block">
+                                                        <div class="radio"></div> Weneday
+                                                    </div>
+                                                </div>
+                                                <div class="session-day-selector mt-2 mb-2 col">
+                                                    <div class="week-day-block">
+                                                        <div class="radio"></div> Tursday
+                                                    </div>
+                                                </div>
+                                                <div class="session-day-selector mt-2 mb-2 col">
+                                                    <div class="week-day-block">
+                                                        <div class="radio"></div> Friday
+                                                    </div>
+                                                </div>
+                                                <div class="session-day-selector mt-2 mb-2 col">
+                                                    <div class="week-day-block">
+                                                        <div class="radio"></div> Saturday
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="list-container">
+                                            <div class="row col-12 m-0">
+                                                <div class=" col-6 d-flex p-4 justify-content-md-start">
+                                                    <div class="text-left">
+                                                        <div class="title">
+                                                            winter training scehdule
+                                                        </div>
+                                                        <div class="d-flex align-items-center list-timeline">
+                                                            <div class="week-or-month text-muted">
+                                                                4 Weeks
+                                                            </div>
+                                                            <hr>
+                                                            <div class="training-session-count text-muted">
+                                                                12 Sessions
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-6 d-flex p-4 justify-content-md-end">
+                                                    <div class="list-toolbox-icon d-flex">
+                                                        <div class="collapse-arrow">
+                                                            <i class="fas fa-sort-down"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="list-container">
+                                            <div class="row col-12 m-0">
+                                                <div class=" col-6 d-flex p-4 justify-content-md-start">
+                                                    <div class="text-left">
+                                                        <div class="title">
+                                                            winter training scehdule
+                                                        </div>
+                                                        <div class="d-flex align-items-center list-timeline">
+                                                            <div class="week-or-month text-muted">
+                                                                4 Weeks
+                                                            </div>
+                                                            <hr>
+                                                            <div class="training-session-count text-muted">
+                                                                12 Sessions
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 d-flex p-4 justify-content-md-end">
+                                                    <div class="list-toolbox-icon d-flex">
+                                                        <div class="collapse-arrow">
+                                                            <i class="fas fa-sort-down"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- list end -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="">
+
+        </section>
+    </div>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/duotone.css"
+        integrity="sha384-R3QzTxyukP03CMqKFe0ssp5wUvBPEyy9ZspCB+Y01fEjhMwcXixTyeot+S40+AjZ" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/fontawesome.css"
+        integrity="sha384-eHoocPgXsiuZh+Yy6+7DsKAerLXyJmu2Hadh4QYyt+8v86geixVYwFqUvMU8X90l" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
